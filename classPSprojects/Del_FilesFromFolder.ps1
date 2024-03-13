@@ -1,4 +1,4 @@
-#Delete files from a folder
+#Delete files from a folder.
 #Modified below to this = worked in vm lab
 $Path = "C:\Users\Administrator.ADATUM\Downloads" #Change to path needed
 $Daysback = "-2" #change to how many days to go back
