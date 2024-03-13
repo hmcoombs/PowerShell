@@ -19,7 +19,7 @@ foreach ($computer in $computers) {
          } Else {
            Write-host "$Computer is" -NoNewline
              Write-Host " DOWN" -ForegroundColor Red  }
-    }
+    
 
 #LON-DC1 is 'up' - is green
 #LON-SVR1 is 'up' - is green
