@@ -21,9 +21,9 @@ foreach ($computer in $computers) {
              Write-Host " DOWN" -ForegroundColor Red  }
     }
 
-#LON-DC1 is up - is green
-#LON-SVR1 is up - is green
-#LON-CL1 is DOWN - is red
+#LON-DC1 is 'up' - is green
+#LON-SVR1 is 'up' - is green
+#LON-CL1 is 'DOWN' - is red
 
 #enable dhcp
                      function Enable-DHCPOnAllComputers {
