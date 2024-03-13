@@ -12,6 +12,18 @@ foreach ($computer in $computers) {
     else {Write-Host "$computer is not reachable."}
                      }
 
+#or for a different look use this
+
+{write-host "$Computer is" -NoNewline
+        Write-host " up" -ForegroundColor Green
+         } Else {
+           Write-host "$Computer is" -NoNewline
+             Write-Host " DOWN" -ForegroundColor Red  }
+    }
+
+#LON-DC1 is up - is green
+#LON-SVR1 is up - is green
+#LON-CL1 is DOWN - is red
 
 #enable dhcp
                      function Enable-DHCPOnAllComputers {
