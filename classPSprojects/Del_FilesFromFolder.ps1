@@ -14,7 +14,7 @@ $msg = $($logFiles.Fullname) -join "`n" #separate lines for the string
         Get-ChildItem $Path | Where-Object { $_.LastWriteTime -lt $DatetoDelete } | Remove-Item
         Write-host "$($logFiles.count) Files Deleted"
 
-#make script to run once a month??  I think you have to do that in the schedualer... Maybe ask Chris or Bing 
+#make script to run once a month??  I think you have to do that in the scheduler ... Just saw the comment below hahaha maybe remove line 17 (Rob)
 #To run on a schedule use task scheduler, specify path were you saved .ps1 file
 
 #or could try the following.  Have not tried to run. Just a note
