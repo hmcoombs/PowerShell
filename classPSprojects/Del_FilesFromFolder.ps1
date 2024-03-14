@@ -14,16 +14,15 @@ $msg = $($logFiles.Fullname) -join "`n" #separate lines for the string
         Get-ChildItem $Path | Where-Object { $_.LastWriteTime -lt $DatetoDelete } | Remove-Item
         Write-host "$($logFiles.count) Files Deleted"
 
-#make script to run once a month??
+#make script to run once a month??  I think you have to do that in the schedualer... Maybe ask Chris or Bing 
 #To run on a schedule use task scheduler, specify path were you saved .ps1 file
 
 #or could try the following.  Have not tried to run. Just a note
+#if line 22 and 23 are no longer needed I would recommend deleting (Rob)
 #$taskTrigger = New-ScheduledTaskTrigger -Weekly -DaysOfWeek Friday -At 3am
 #Register-ScheduledTask -TaskName "MyScheduledTask" -Trigger $taskTrigger -Action { powershell.exe -NoLogo -WindowStyle Hidden -File "C:\Path\To\Your\Script.ps1" }
 
-
-
-
+#set variable values for scirpt 
 $Path = "C:\TEMP\junk"
 $Daysback = "-30"
 $CurrentDate = Get-Date
